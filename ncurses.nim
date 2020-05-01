@@ -4,7 +4,7 @@ when defined(windows):
 elif defined(macosx):
   const libncurses* = "libncurses.dylib"
 else:
-  const libncurses* = "libncursesw.so"
+  const libncurses* = "libncursesw.so(.5|.6|)"
 
 type
   chtype*  = cuint ## Holds a character and possibly an attribute
